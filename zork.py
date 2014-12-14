@@ -81,3 +81,31 @@ if shop == "Ye Olde Hat Shoppe":
     hat = "none"
     print("\"Very well.\"")
   print("You return to the courtyard.")
+elif shop == "The Jolly Man's Cave":
+  print("You enter the cold dark tavern. A smell of sweat and blood are in the air. A large group is in the center of the tavern and are shouting\"Fight! Fight!, Fight!\" immediatly you know this is the wrong choice. As you turn to leave a huge man takes your arm and drags you into the center of all the chanting.")
+  print("You are stuck in the ring and have no way to get out, but you have a choice on who you would like to fight.")
+  print(" ")
+  print("A Scrawny man")
+  print("The Giant man")
+  print("The tavern's owner")
+  print("Try to run")
+  print(' ')
+  fight = raw_input('Your of whom you would like to fight:')
+  if fight == "A scrawny man":
+    fight = "Scrawny man"
+    print("\"Ahhhhh you choose pete.\"")
+    print("The bony man walks into the circle and muters\"you didn't have to do this to yourself %s" % (name))
+    print("The man threw a punch with suprising force.")
+    print("His giant knukles made contact with your face.")
+    print("Stars are spinning around your head.")
+    print(" ")
+    print(" ")
+  elif hat == "Knight's helmet":
+    hat = "helmet"
+    print("\"Excellent choice!\"")
+  elif hat == "Fez":
+    hat = "cool"
+    print("\"Excellent choice!\"")
+  elif hat == "No thanks":
+    hat = "none"
+    print("\"Very well.\"")
