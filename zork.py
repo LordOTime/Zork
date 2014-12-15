@@ -1,5 +1,6 @@
 import time
 import sys
+import random
 
 class luke1:
   def __init__(self, species, legs, color):
@@ -85,27 +86,40 @@ elif shop == "The Jolly Man's Cave":
   print("You enter the cold dark tavern. A smell of sweat and blood are in the air. A large group is in the center of the tavern and are shouting\"Fight! Fight!, Fight!\" immediatly you know this is the wrong choice. As you turn to leave a huge man takes your arm and drags you into the center of all the chanting.")
   print("You are stuck in the ring and have no way to get out, but you have a choice on who you would like to fight.")
   print(" ")
-  print("A Scrawny man")
-  print("The Giant man")
-  print("The tavern's owner")
-  print("Try to run")
+  print("A Scrawny Man")
+  print("The Giant Man")
+  print("The Tavern's Owner")
+  print("Try To Run")
   print(' ')
   fight = raw_input('Your of whom you would like to fight:')
-  if fight == "A scrawny man":
-    fight = "Scrawny man"
-    print("\"Ahhhhh you choose pete.\"")
+  if fight == "A Scrawny Man":
+    fight = "Scrawny Man"
+    print("\"Ahhhhh you choose Pete.\"")
     print("The bony man walks into the circle and muters\"you didn't have to do this to yourself %s" % (name))
     print("The man threw a punch with suprising force.")
     print("His giant knuckles made contact with your face.")
     print("Stars are spinning around your head.")
     print(" ")
     print(" ")
-  elif hat == "Knight's helmet":
-    hat = "helmet"
+  elif fight == "The Giant Man":
+    fight = "Giant man"
     print("\"Excellent choice!\"")
-  elif hat == "Fez":
-    hat = "cool"
-    print("\"Excellent choice!\"")
-  elif hat == "No thanks":
-    hat = "none"
-    print("\"Very well.\"")
+    print("You may acctually stand a chance!")
+    print("The man lumbered into the circle. The circle seemed too small for the Giant of a man!")
+    print("\"Let's hope that you can make friends with me in the next 30 seconds because if you don't you will be in a world of hurt.\" The man said")
+  elif fight == "The Tavern's Owner":
+    fight = "Tavern Owner"
+    print("\"Hey at least when you get knocked out, have your head smash into the ground, and have your teeth get lost in the cobble stone floor you can have some whisky to numb the pain\" A man yelled out in a sarcastic tone.")
+  elif fight == "Try To Run":
+    fate_1 = 'Escape'
+    fate_2 = 'Get trapped'
+    fate_3 = [fate_1, fate_2]
+    fate_4 = (random.choice(fate_3))
+    if fate_4 == fate_1:
+      print(fate_1)
+    else:
+      print(fate_2)
+
+
+
+    
