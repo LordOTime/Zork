@@ -34,7 +34,7 @@ if input_1 == 'Species':
 elif input_1 == 'Legs':
   print('Do you want to know about Luke or Sam?')
   input_1 = raw_input('Type Luke or Sam to become an educated being: ')
-  if input_1 == 'Sam':
+  if input_1 == 'Sawm':
     print(sam.legs)
   if input_1 == 'Luke':
     print(luke.legs)
@@ -117,8 +117,30 @@ elif shop == "The Jolly Man's Cave":
     fate_4 = (random.choice(fate_3))
     if fate_4 == fate_1:
       print(fate_1)
+      print('You get lucky. When the crowd tries to grab you you slip out of thier hands')
     else:
       print(fate_2)
+elif shop == "The Gilded Lilly":
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print("")
+  print(' ')
+  meal = raw_input('Your choice of meal:')
+  if meal == "Fine Cheese and Wine":
+    meal = "Fine Cheese and Wine"
+    print("\"Excellent choice!\"")
+  elif meal == "Poison game":
+    meal = "Poison game"
+    print("")
+  elif meal == "Cinimon Toast Crunch":
+    meal = "Cinimon Toast Crunch"
+    print("")
+  elif meal == "No thanks":
+    meal = "None"
+    print("You leave the resteraunt")  
 
 
 
